@@ -1,0 +1,4 @@
+#Mount NTFS file system with read-write support.
+#https://github.com/osxfuse/osxfuse/wiki/NTFS-3G
+sudo diskutil unmountDisk /dev/disk2
+sudo /usr/local/bin/ntfs-3g /dev/disk2s1 /Volumes/NTFS -o local -o allow_other -o auto_xattr -o auto_cache
